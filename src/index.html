@@ -12,6 +12,7 @@
         <div class="sections">
           <label for="name">Username</label>
           <input
+            class="fields"
             type="text"
             name="name"
             id="name"
@@ -24,6 +25,7 @@
         <div class="sections">
           <label for="email">Email</label>
           <input
+            class="fields"
             type="email"
             name="email"
             id="email"
@@ -36,6 +38,7 @@
         <div class="sections">
           <label for="country">Country</label>
           <input
+            class="fields"
             type="text"
             name="country"
             id="country"
@@ -48,18 +51,21 @@
         <div class="sections">
           <label for="zip-code">Zip code</label>
           <input
+            class="fields"
             type="text"
             name="zip-code"
             id="zip-code"
             placeholder="zip-code"
             required
-            minlength="3"
+            minlength="4"
+            pattern="[0-9]*"
           />
           <span class="error" aria-live="polite"></span>
         </div>
         <div class="sections">
           <label for="password">Password</label>
           <input
+            class="fields"
             type="password"
             name="password"
             id="password"
@@ -72,6 +78,7 @@
         <div class="sections">
           <label for="r-password">Repeat password</label>
           <input
+            class="fields"
             type="password"
             name="r-password"
             id="r-password"

@@ -1,4 +1,5 @@
 body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -8,10 +9,11 @@ body {
 #formu {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
   gap: 2rem;
   padding: 2rem;
   border-radius: 1rem;
-  background-color: indianred;
+  background-color: #a3e635;
 }
 
 label {
@@ -20,14 +22,35 @@ label {
 }
 
 input {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
   padding: 0.5rem;
   border-radius: 0.2rem;
   border: none;
+  outline: none;
   box-shadow: inset 0px 0px 3px black;
+}
+
+input:valid {
+  background-color: #d9f99d;
+}
+
+.invalid-input {
+  background-color: #ef4444;
 }
 
 .sections {
   display: grid;
-  grid-template-rows: 0.8rem 1fr;
-  gap: 0.2rem;
+  grid-template-rows: 0.8rem 1fr 1fr;
+}
+
+span {
+  display: none;
+  width: 200px;
+  align-self: flex-start;
+  font-size: 0.8rem;
+  color: white;
+  background-color: red;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
 }
